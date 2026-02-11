@@ -45,6 +45,6 @@ def run_cooperative_model(p, base_c_s, c_m, q, disruptions, storage_cost_per_uni
         disruptions.count("Delay") * 7
     )
     satisfaction = max(0, min(100, (100 - (p - p_m) * 1.5 + (demand / q) * 100 + (90 - reliability_penalty)) / 3))
-    #hi how are you
 
     return results + [satisfaction]
+
